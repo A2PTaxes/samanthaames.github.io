@@ -1,50 +1,143 @@
-<div style="max-width:600px;margin:0 auto;padding:2rem;font-family:system-ui;">
-  
-  <h1 style="text-align:center;">Before You Preorder — Choose Your Path</h1>
-  
-  <p style="text-align:center;font-size:1.1rem;">
-    We collect your name and email <strong>only</strong> to send preorder bonuses, book updates, 
-    and future Tax Dragon Taming Society release announcements.
-  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apprentice Registry | Tax Dragon Taming Society</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p style="text-align:center;color:#c7c7c7;font-size:0.95rem;margin-top:-0.5rem;">
-    <strong>We will never sell, share, or trade your information.</strong><br>
-    Your details are used solely for Tax Dragon Taming Society communications.
-  </p>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("tFMncaXAux2rR6HSc"); /* Your Public Key */
+    })();
+  </script>
 
-  <p style="text-align:center;">
-    Joining the Founding Readers Circle ensures you receive:<br>
-    Preorder bonuses • Early creature entries • Behind‑the‑scenes updates • Release notifications
-  </p>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0c10;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3.5rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .subheadline {
+      text-align: center;
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+    .privacy {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #c7c7c7;
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #11141a;
+      color: #f5f5f5;
+    }
+    .btn {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      background: #2ecc71;
+      color: #fff;
+      margin-top: 1rem;
+    }
+    .error {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      color: #ff7675;
+      display: none;
+    }
+    .note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaaaaa;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
 
-  <form action="mailto:engagementletters@samanthaames.online" method="post" enctype="text/plain" style="margin-top:2rem;">
-    <label>Name:</label><br>
-    <input type="text" name="Name" required style="width:100%;padding:0.6rem;margin-bottom:1rem;"><br>
+<body>
+  <div class="container">
+    <h1>The Apprentice Registry</h1>
 
-    <label>Email:</label><br>
-    <input type="email" name="Email" required style="width:100%;padding:0.6rem;margin-bottom:1.5rem;"><br>
+    <p class="subheadline">
+      Add your name to the Tax Dragon Taming Society ledger to receive preorder bonuses, book updates,
+      and future Society dispatches.
+    </p>
 
-    <div style="display:flex;gap:1rem;justify-content:center;">
+    <p class="privacy">
+      <strong>Your information is never sold or shared.</strong><br>
+      It is used solely for Tax Dragon Taming Society communications.
+    </p>
 
-      <!-- GREEN BUTTON: JOIN -->
-      <button type="submit" 
-        style="background:#2ecc71;color:white;border:none;padding:1rem 1.5rem;
-               font-size:1rem;border-radius:6px;cursor:pointer;width:45%;">
-        Join Founding Readers
-      </button>
+    <form id="apprentice-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
 
-      <!-- RED BUTTON: DECLINE -->
-      <a href="YOUR_SQUARE_CHECKOUT_LINK_HERE"
-        style="background:#e74c3c;color:white;text-align:center;padding:1rem 1.5rem;
-               font-size:1rem;border-radius:6px;cursor:pointer;width:45%;display:inline-block;">
-        Decline & Continue
-      </a>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
 
-    </div>
-  </form>
+      <button type="submit" class="btn">Join Founding Readers & Continue</button>
+    </form>
 
-  <p style="text-align:center;margin-top:1.5rem;font-size:0.9rem;color:#666;">
-    Declining simply skips the Founding Readers Circle. You can still preorder the book normally.
-  </p>
+    <p id="form-error" class="error">Something went wrong. Please try again.</p>
 
-</div>
+    <p class="note">
+      Preordering grants Founding Reader status and access to exclusive bonuses.
+    </p>
+  </div>
+
+  <script>
+    const form = document.getElementById('apprentice-form');
+    const errorEl = document.getElementById('form-error');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      errorEl.style.display = 'none';
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      const params = { name, email };
+
+      emailjs.send("service_8bqzpi4", "template_0vsndoe", params)
+        .then(() => {
+          window.location.href = "apprenticecomplete.html";
+        })
+        .catch(() => {
+          errorEl.style.display = 'block';
+        });
+    });
+  </script>
+</body>
+</html>
