@@ -130,7 +130,7 @@
 
       const params = { name, email };
 
-      emailjs.send("service_8bqzpi4", "template_0vsndoe", params)
+      emailjs.send("service_8bqzpi4" /* Public Key */, "template_0vsndoe", params)
         .then(() => {
           window.location.href = "apprenticecomplete.html";
         })
