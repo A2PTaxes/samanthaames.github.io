@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Tax Dragon Taming Society – Bestiary Codex Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0b0c10;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    a { color: #ffd86b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    header, section {
+      margin-bottom: 3rem;
+    }
+    h1, h2, h3 {
+      font-family: "Georgia", "Times New Roman", serif;
+      margin-top: 0;
+    }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1.3rem; margin-bottom: 0.25rem; }
+    .subheadline {
+      font-size: 1.1rem;
+      color: #e0d7c2;
+      margin-bottom: 1.5rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 0.9rem 1.8rem;
+      background: #ffd86b;
+      color: #2b2110;
+      border-radius: 999px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 0.75rem;
+    }
+    .cta-btn:hover {
+      background: #ffcf4a;
+      text-decoration: none;
+    }
+    .tagline {
+      font-style: italic;
+      color: #d9c9a0;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(255, 216, 107, 0.1);
+      border: 1px solid rgba(255, 216, 107, 0.4);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    blockquote {
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid #ffd86b;
+      color: #f0e7d2;
+      font-style: italic;
+    }
+    .section-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #c3b59f;
+      margin-bottom: 0.25rem;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: #a89c86;
+      border-top: 1px solid #2a2520;
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HERO -->
+    <header>
+      <div class="pill">The Tax Dragon Taming Society</div>
+      <h1>Enter the World Where Your Everyday Struggles Become Creatures You Can Tame</h1>
+      <p class="subheadline">
+        A whimsical, wise, and wildly relatable guidebook for anyone learning to navigate adulthood — one creature at a time.
+      </p>
+      <a href="#preorder" class="cta-btn">Join the Society &amp; Preorder the Bestiary</a>
+    </header>
+
+    <!-- HOOK -->
+    <section id="hook">
+      <div class="section-label">The Hook</div>
+      <h2>The World Is Full of Creatures</h2>
+      <p>
+        What if the things that overwhelm you — taxes, habits, procrastination, money, motivation — weren’t personal failures…
+        but <strong>creatures</strong>?
+      </p>
+      <p>
+        Creatures with names. Creatures with personalities. Creatures that if you could understand them... you could outsmart, and eventually tame them.
+      </p>
+      <p>
+        Welcome to <strong>The Tax Dragon Taming Society</strong>, where the chaos of adulthood becomes a world of Mischief Makers
+        and Guiding Guardians — and you finally get the guidebook you always needed.
+      </p>
+    </section>
+
+    <!-- ABOUT THE BOOK -->
+    <section id="about">
+      <div class="section-label">About the Book</div>
+      <h2>
+        THE TAX DRAGON TAMING SOCIETY Presents<br />
+        <span class="tagline">A Work in Progress: The Bestiary Codex of Mischief Makers &amp; Guiding Guardians</span>
+      </h2>
+      <p>
+        Part fantasy. Part self‑development. Part life‑skills handbook disguised as a magical creature encyclopedia.
+      </p>
+      <p>This Bestiary introduces you to two kinds of beings:</p>
+
+      <h3>🗡️ The Mischief Makers</h3>
+      <p>The creatures that derail your plans, drain your energy, and nibble away at your confidence, like:</p>
+      <ul>
+        <li>The Procrastination Pixie</li>
+        <li>The Over-Deduction Ogre</li>
+        <li>The Life-Interruption Mimic</li>
+        <li>The Comparison Gremlins</li>
+      </ul>
+
+      <h3>🛡️ The Guiding Guardians</h3>
+      <p>The creatures that help you stay grounded, focused, and capable, such as:</p>
+      <ul>
+        <li>The Estimated Emberfox</li>
+        <li>The Ledgerlight Kirin</li>
+        <li>The Clarity Moth</li>
+        <li>The Mentor's Wisp</li>
+      </ul>
+
+      <p>
+        Each entry blends storytelling, psychology, and practical strategies — so you’re not just entertained… you’re empowered.
+      </p>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section id="who-for">
+      <div class="section-label">Who It’s For</div>
+      <h2>Who Should Join the Society?</h2>
+      <p>This Bestiary is perfect for:</p>
+      <ul>
+        <li>Teens stepping into adulthood</li>
+        <li>Young adults navigating life for the first time</li>
+        <li>Neurodivergent learners who thrive with metaphors</li>
+        <li>Adults who never got the “how to life” manual</li>
+        <li>Anyone who wants to understand themselves with humor and compassion</li>
+      </ul>
+      <p>
+        If you’ve ever thought, <em>“I wish someone had explained this to me earlier,”</em> this book is for you.
+      </p>
+    </section>
+
+    <!-- WHAT YOU'LL LEARN -->
+    <section id="value">
+      <div class="section-label">What You’ll Learn</div>
+      <h2>What the Bestiary Helps You Do</h2>
+      <ul>
+        <li>Recognize your personal Mischief Makers</li>
+        <li>Summon the right Guiding Guardian to counter them</li>
+        <li>Build habits that actually stick</li>
+        <li>Understand your emotional patterns with compassion</li>
+        <li>Approach taxes, money, and responsibilities without fear</li>
+        <li>Turn chaos into clarity — one creature at a time</li>
+      </ul>
+      <p>
+        This isn’t just a book. It’s a <strong>training manual</strong> for becoming the hero of your own story.
+      </p>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section id="social-proof">
+      <div class="section-label">Early Reader Reactions</div>
+      <h2>What Early Tamers Are Saying</h2>
+      <blockquote>
+        “I finally understand my own chaos — because now it has a face.”
+        <br />— Early Reader
+      </blockquote>
+      <blockquote>
+        “This is the first self‑help book I’ve ever actually enjoyed.”
+        <br />— Beta Reader
+      </blockquote>
+      <blockquote>
+        “It feels like a D&D monster manual for adulthood.”
+        <br />— Workshop Participant
+      </blockquote>
+    </section>
+
+    <!-- PREORDER BONUSES -->
+    <section id="preorder">
+      <div class="section-label">Preorder Bonuses</div>
+      <h2>Founding Reader Perks (Limited Time)</h2>
+      <p>Become a <strong>Founding Reader</strong> and receive:</p>
+      <ul>
+        <li>Exclusive creature entries not included in the book</li>
+        <li>Printable Novice Tamer’s Field Notes</li>
+        <li>Early access to future creature entries</li>
+      </ul>
+      <p>These bonuses are available <strong>only during preorder</strong>.</p>
+      <a href="#order-link" class="cta-btn">Become a Founding Reader</a>
+    </section>
+
+    <!-- AUTHOR NOTE -->
+    <section id="author-note">
+      <div class="section-label">Author’s Note</div>
+      <h2>From the Keeper of the Codex</h2>
+      <p>
+        The Tax Dragon Taming Society began as a way to help real people understand real‑world challenges — through whimsy,
+        metaphor, and a little bit of magic.
+      </p>
+      <p>
+        This Bestiary is a love letter to everyone who ever felt unprepared for adulthood. You’re not alone. You’re not behind.
+        You’re just meeting your creatures for the first time.
+      </p>
+      <p>And now, you’ll know how to tame them.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; <!-- YEAR --> The Tax Dragon Taming Society. All rights reserved.</p>
+      <p id="order-link">
+        Ready to begin? <a href="#">Click here to complete your preorder.</a>
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
