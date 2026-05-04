@@ -130,13 +130,23 @@
 
       const params = { name, email };
 
-      emailjs.send("service_8bqzpi4" /* Public Key */, "template_0vsndoe", params)
-        .then(() => {
-          window.location.href = "apprenticecomplete.html";
-        })
-        .catch(() => {
-          errorEl.style.display = 'block';
-        });
+      // 1. Send admin notification
+emailjs.send("service_8bqzpi4", "template_0vsndoe", params)
+  .then(() => {
+
+    // 2. Send welcome email to apprentice
+    emailjs.send("service_8bqzpi4", "template_zcl3tb3", {
+      to_email: email,
+      name: name
+    });
+
+    // 3. Redirect to success page
+    window.location.href = "apprenticecomplete.html";
+  })
+  .catch(() => {
+    errorEl.style.display = 'block';
+  });
+
     });
   </script>
 </body>
